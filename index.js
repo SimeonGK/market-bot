@@ -39,7 +39,7 @@ const updateFloorPrice = () => {
 client.once(Events.ClientReady, (c) => {
   console.log(`Ready! Logged in as ${c.user.tag}`);
   c.user.setUsername(marketName);
-  const newAvatar = './images/logo.png';
+  const newAvatar = './images/logowhitebackground.png';
   c.user.setAvatar(newAvatar)
     .then(() => console.log('Avatar changed successfully!'))
     .catch(console.error);
